@@ -24,7 +24,7 @@ function urlCall(url) {
 
 function pg3Api(pg3Input1, pg3Input2){
     var letters = /^[A-Za-z]+$/;
-    if(pg3Input1.value.match(letters)){
+    if(pg3Input1.value.match(letters) && (pg3Input1.value && pg3Input2.value != "")){
         pg3SavedInput = pg3Input1.value + "/" + pg3Input2.value;
         pg3Url = "https://allchallenges.azurewebsites.net/AllChallenges/AskingQuestions/" + pg3SavedInput;
         urlCall(pg3Url);

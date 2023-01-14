@@ -24,7 +24,7 @@ function urlCall(url) {
 
 function pg2Api(pg2NumInput1, pg2NumInput2){
     var numbers = /^[0-9]*$/;
-    if(pg2NumInput1.value.match(numbers) && pg2NumInput2.value.match(numbers)){
+    if(pg2NumInput1.value.match(numbers) && pg2NumInput2.value.match(numbers) && (pg2NumInput1.value && pg2NumInput2.value != "")){
         pg2SavedInput = pg2NumInput1.value + "/" + pg2NumInput2.value;
         pg2Url = "https://allchallenges.azurewebsites.net/AllChallenges/AddTwoNumbers/" + pg2SavedInput;
         urlCall(pg2Url);

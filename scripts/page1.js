@@ -23,7 +23,7 @@ function urlCall(url) {
 
 function helloApi(nameInput){
     var letters = /^[A-Za-z]+$/;
-    if(nameInput.value.match(letters)){
+    if(nameInput.value.match(letters) && nameInput.value != ""){
         savedInput = nameInput.value;
         sayHelloUrl = "https://allchallenges.azurewebsites.net/AllChallenges/Hello/" + savedInput;
         urlCall(sayHelloUrl);

@@ -24,7 +24,7 @@ function urlCall(url) {
 
 function pg4Api(pg4Input1, pg4Input2){
     var numbers = /^[0-9]*$/;
-    if(pg4Input1.value.match(numbers) && pg4Input2.value.match(numbers)){
+    if(pg4Input1.value.match(numbers) && pg4Input2.value.match(numbers) && (pg4Input1.value && pg4Input2.value != "")){
         pg4SavedInput = pg4Input1.value + "/" + pg4Input2.value;
         pg4Url = "https://allchallenges.azurewebsites.net/AllChallenges/GreaterOrLessThan/" + pg4SavedInput;
         urlCall(pg4Url);

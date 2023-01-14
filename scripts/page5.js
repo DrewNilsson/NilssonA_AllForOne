@@ -37,7 +37,7 @@ function pg5Api(pg5InputArray) {
   var letters = /^[A-Za-z]+$/;
 
   for (let i = 0; i < pg5InputArray.length; i++) {
-    if (pg5InputArray[i].value.match(letters) && pg5InputArray.value != "") {
+    if (pg5InputArray[i].value.match(letters) && pg5InputArray[i].value != "") {
       pg5SavedInput = pg5SavedInput + "/" + pg5InputArray[i].value;
       isValid = true;
     } else {
@@ -46,7 +46,7 @@ function pg5Api(pg5InputArray) {
       break;
     }
   }
-  
+
   if (isValid) {
     pg5Url =
       "https://allchallenges.azurewebsites.net/AllChallenges/MadLib/" +
