@@ -10,6 +10,11 @@ body {
     justify-content: center;
 }
 
+.navbar {
+    --bs-navbar-hover-color: rgba(1, 1, 1, 1)
+    --bs-navbar-active-color: rgba(1, 1, 1, 1)
+}
+
 .navbar-brand {
     color: white;
 }
@@ -38,6 +43,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    --bs-btn-hover-bg: #3E00C2;
+    --bs-btn-hover-border-color: #3E00C2;
 }
 
 .pages-body-container {
